@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .blue {
+            background-color: #dbe8f5;
+        }
+
+        .green {
+            background-color: #d3eadd;
+        }
+
+        .category {
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .long-text {
+            text-align: left;
+            padding-left: 10px;
+            line-height: 1.5;
+        }
+
+        .important-text {
+            color: red;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        .header-text {
+            color: blue;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .second-table {
+            width: 100%;
+            max-width: 500px;
+            border-collapse: collapse;
+            margin: 15px auto;
+        }
+
+        .second-table td {
+            background-color: #d0e7c5;
+        }
+
+        .second-table td:first-child {
+            background-color: white;
+        }
+
+        @media (max-width: 768px) {
+            table {
+                overflow-x: auto;
+                width: 100%;
+            }
+
+            th, td {
+                padding: 5px;
+                font-size: 12px;
+            }
+
+            .important-text {
+                font-size: 14px;
+                margin: 10px 0;
+            }
+
+            .header-text {
+                font-size: 18px;
+                margin-top: 10px;
+            }
+
+            .second-table {
+                max-width: 100%;
+            }
+        }
+    </style>
+    <title>Frais de Participation</title>
+</head>
+<body>
+
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Catégorie de participation</th>
+                <th colspan="2">De l'intérieur de la Tunisie (TND)</th>
+                <th rowspan="2">Les frais couvrent</th>
+            </tr>
+            <tr>
+                <th>1 nuit</th>
+                <th>2 nuits</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="category">Académique</td>
+                <td class="blue">300</td>
+                <td class="green">600</td>
+                <td class="long-text">L'hébergement (en occupation double) à l'hôtel (tout compris soft), les déjeuners supplémentaires, les pauses café, les documentations, l'attestation de présence et la taxe d'hôtel.</td>
+            </tr>
+            <tr>
+                <td class="category">Participant de l'industrie</td>
+                <td class="blue">500</td>
+                <td class="green">700</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="category">Personne accompagnante</td>
+                <td class="blue">170</td>
+                <td class="green">340</td>
+                <td class="long-text">L'hébergement (en occupation double) à l'hôtel (tout compris soft).</td>
+            </tr>
+            <tr>
+                <td class="category">1 enfant (02-12 ans)</td>
+                <td class="blue">85</td>
+                <td class="green">170</td>
+                <td class="long-text">Rester dans la chambre des parents.</td>
+            </tr>
+            <tr>
+                <td class="category">Supplément chambre individuelle</td>
+                <td class="blue">45</td>
+                <td class="green">90</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p class="important-text">
+    L'inscription en ligne est ouverte aux personnes résidant en Tunisie. Le coût est de 100 dinars. <br>
+    Participation sans hébergement : Le coût est de 180 dinars par jour.
+</p>
+
+<p class="header-text">De l'extérieur de la Tunisie</p>
+<div class="table-container">
+    <table class="second-table">
+        <tr>
+            <td>Académique</td>
+            <td>300 Euro</td>
+        </tr>
+        <tr>
+            <td>Personne accompagnante</td>
+            <td>80 Euro/nuit</td>
+        </tr>
+        <tr>
+            <td>Inscription en ligne</td>
+            <td>50 Euro</td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
