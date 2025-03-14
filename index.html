@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: auto !important;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -21,11 +32,14 @@
             font-size: 14px;
         }
 
-        table, th, td {
+        table,
+        th,
+        td {
             border: 1px solid black;
         }
 
-        th, td {
+        th,
+        td {
             padding: 12px;
             text-align: center;
         }
@@ -92,7 +106,8 @@
                 width: 100%;
             }
 
-            th, td {
+            th,
+            td {
                 padding: 5px;
                 font-size: 12px;
             }
@@ -114,78 +129,82 @@
     </style>
     <title>Frais de Participation</title>
 </head>
+
 <body>
 
-<div class="table-container">
-    <table>
-        <thead>
-            <tr>
-                <th rowspan="2">Catégorie de participation</th>
-                <th colspan="2">De l'intérieur de la Tunisie (TND)</th>
-                <th rowspan="2">Les frais couvrent</th>
-            </tr>
-            <tr>
-                <th>1 nuit</th>
-                <th>2 nuits</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="category">Académique</td>
-                <td class="blue">300</td>
-                <td class="green">600</td>
-                <td class="long-text">L'hébergement (en occupation double) à l'hôtel (tout compris soft), les déjeuners supplémentaires, les pauses café, les documentations, l'attestation de présence et la taxe d'hôtel.</td>
-            </tr>
-            <tr>
-                <td class="category">Participant de l'industrie</td>
-                <td class="blue">500</td>
-                <td class="green">700</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="category">Personne accompagnante</td>
-                <td class="blue">170</td>
-                <td class="green">340</td>
-                <td class="long-text">L'hébergement (en occupation double) à l'hôtel (tout compris soft).</td>
-            </tr>
-            <tr>
-                <td class="category">1 enfant (02-12 ans)</td>
-                <td class="blue">85</td>
-                <td class="green">170</td>
-                <td class="long-text">Rester dans la chambre des parents.</td>
-            </tr>
-            <tr>
-                <td class="category">Supplément chambre individuelle</td>
-                <td class="blue">45</td>
-                <td class="green">90</td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Catégorie de participation</th>
+                    <th colspan="2">De l'intérieur de la Tunisie (TND)</th>
+                    <th rowspan="2">Les frais couvrent</th>
+                </tr>
+                <tr>
+                    <th>1 nuit</th>
+                    <th>2 nuits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="category">Académique</td>
+                    <td class="blue">300</td>
+                    <td class="green">600</td>
+                    <td class="long-text">L'hébergement (en occupation double) à l'hôtel (tout compris soft), les
+                        déjeuners supplémentaires, les pauses café, les documentations, l'attestation de présence et la
+                        taxe d'hôtel.</td>
+                </tr>
+                <tr>
+                    <td class="category">Participant de l'industrie</td>
+                    <td class="blue">500</td>
+                    <td class="green">700</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="category">Personne accompagnante</td>
+                    <td class="blue">170</td>
+                    <td class="green">340</td>
+                    <td class="long-text">L'hébergement (en occupation double) à l'hôtel (tout compris soft).</td>
+                </tr>
+                <tr>
+                    <td class="category">1 enfant (02-12 ans)</td>
+                    <td class="blue">85</td>
+                    <td class="green">170</td>
+                    <td class="long-text">Rester dans la chambre des parents.</td>
+                </tr>
+                <tr>
+                    <td class="category">Supplément chambre individuelle</td>
+                    <td class="blue">45</td>
+                    <td class="green">90</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-<p class="important-text">
-    L'inscription en ligne est ouverte aux personnes résidant en Tunisie. Le coût est de 100 dinars. <br>
-    Participation sans hébergement : Le coût est de 180 dinars par jour.
-</p>
+    <p class="important-text">
+        L'inscription en ligne est ouverte aux personnes résidant en Tunisie. Le coût est de 100 dinars. <br>
+        Participation sans hébergement : Le coût est de 180 dinars par jour.
+    </p>
 
-<p class="header-text">De l'extérieur de la Tunisie</p>
-<div class="table-container">
-    <table class="second-table">
-        <tr>
-            <td>Académique</td>
-            <td>300 Euro</td>
-        </tr>
-        <tr>
-            <td>Personne accompagnante</td>
-            <td>80 Euro/nuit</td>
-        </tr>
-        <tr>
-            <td>Inscription en ligne</td>
-            <td>50 Euro</td>
-        </tr>
-    </table>
-</div>
+    <p class="header-text">De l'extérieur de la Tunisie</p>
+    <div class="table-container">
+        <table class="second-table">
+            <tr>
+                <td>Académique</td>
+                <td>300 Euro</td>
+            </tr>
+            <tr>
+                <td>Personne accompagnante</td>
+                <td>80 Euro/nuit</td>
+            </tr>
+            <tr>
+                <td>Inscription en ligne</td>
+                <td>50 Euro</td>
+            </tr>
+        </table>
+    </div>
 
 </body>
+
 </html>
